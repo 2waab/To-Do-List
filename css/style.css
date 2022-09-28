@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+body {
+    background-color: #f1f5f9;
+}
+.container {
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* Start Media Screen */
+/* Small */
+@media (min-width: 768px) {
+	.container {
+		width: 750px;
+	}
+}
+/* Medium */
+@media (min-width: 992px) {
+	.container {
+		width: 970px;
+	}
+}
+/* Large */
+@media (min-width: 1200px) {
+	.container {
+		width: 1170px;
+	}
+}
+.container {
+    margin-top: 20px;
+}
+.container h1 {
+    width: fit-content;
+    margin-bottom: 35px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.container h1::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    bottom: 10px;
+    left: 0;
+}
+.container h1::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    bottom: 6px;
+    border-radius: 50%;
+    left: 0;
+}
+.container .add {
+    position: relative;
+}
+.container .add input {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #eee;
+    outline: none;
+    font-size: 22px;
+    background-color: #f1f5f9;
+}
+.container .add .add-to-result {
+    color: #0075ff;
+    border: none;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: 28px;
+    cursor: pointer;
+}
+.container .result {
+    margin-top: 30px;
+}
+.container .result .cont-result {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+.container .result .cont-result p {
+    font-size: 18px;
+}
+.container .result .cont-result div {
+    display: flex;
+}
+.container .result .cont-result div i.delete {
+    color: #ff2525;
+    font-size: 22px;
+    cursor: pointer;
+}
+.container .result .cont-result i.check {
+    color: #4caf50;
+    margin-right: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+.container .result .cont-result p.check {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.container .footer {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 50px 0;
+}
+.container .footer a {
+    text-decoration: none;
+    color: #0075ff;
+    cursor: pointer;
+}
