@@ -24,6 +24,9 @@ send.addEventListener('click', () => {
         content.appendChild(paragraph);
         content.appendChild(divOfBtn);
         result.appendChild(content);
+        setTimeout(() => {
+            content.classList.add("show");
+        }, 1);
         btnCheck.addEventListener('click', () => {
             paragraph.classList.toggle("check");
         });
@@ -32,3 +35,10 @@ send.addEventListener('click', () => {
         });
     };
 });
+
+let them = document.querySelector(".them");
+let body = document.querySelector("body");
+
+them.onclick = () => {
+    body.classList.toggle("dark");
+};
